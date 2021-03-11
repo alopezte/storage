@@ -71,3 +71,7 @@ func LoadFromFile(path string, v interface{}) error {
 	defer f.Close()
 	return Unmarshal(f, v)
 }
+
+func Version() string {
+	return "0.0.1"
+}
