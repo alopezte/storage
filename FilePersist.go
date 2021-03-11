@@ -10,6 +10,7 @@ import (
 	"time"
 )
 
+//ShortDate stores date in format yyyy-MM-dd
 type ShortDate time.Time
 
 func (Date ShortDate) MarshalJSON() ([]byte, error) {
